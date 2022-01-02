@@ -32,4 +32,4 @@ class Equipment extends Users{
     }
 };
 
-module.exports = {Users, Equipment};
+module.exports = { Users, Equipment };
