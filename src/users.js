@@ -13,13 +13,21 @@ class Users {
             console.log('Enjoy you bike ride!!')
         }
     }
+    checkCard(){
+        if(this.card.toString().length != 16){
+            console.log('Invalid Card number')
+        }
+        else{
+            console.log('Card Accepted')
+        }
+    }
 };
 
 class Equipment extends Users{
-    constructor(username){
+    constructor(username, helmet, bag){
         super(username)
-        this.helmet = true
-        this.bag = true
+        this.helmet = helmet
+        this.bag = bag
     }
 
     hashelmet(){
@@ -27,7 +35,7 @@ class Equipment extends Users{
             console.log('You need to wear a helmet.')
         }
         else{
-            console.log('You are ready to ride')
+            console.log('You are ready to ride!!')
         }
     }
 };
